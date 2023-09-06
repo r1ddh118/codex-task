@@ -1,0 +1,16 @@
+//Take input from the user. Ask for their full name, age, college name and display it
+#include <iostream>
+using namespace std;
+int main() 
+{
+    string name,coll;
+    int age;
+    cout<<"enter your name";
+    getline(cin,name);
+    cout<<"enter your college name";
+    getline(cin,coll);
+    cout<<"enter your age";
+    cin>>age;
+    cout<<"Hello,"<<name<<", I see you are "<<age<<" years old and currently studying at "<<coll<<endl;
+    
+}
