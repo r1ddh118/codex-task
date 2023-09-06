@@ -1,0 +1,33 @@
+//Create a simple calculator program which performs addition, subtraction, multiplication, division and absolute functions 
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,ch;
+    cout<<"enter two numbers"<<endl;
+    cin>>a>>b;
+    cout<<"1.absolute value of numbers"<<endl;
+    cout<<"2.addition of numbers"<<endl;
+    cout<<"3.substraction of numbers"<<endl;
+    cout<<"4.multiplication of numbers"<<endl;
+    cout<<"5.division of numbers"<<endl;
+    cout<<"enter your choice"<<endl;
+    cin>>ch;
+    switch(ch)
+    {
+        case 1:cout<<"the absolute value of "<<a<<" is "<<abs(a)<<endl;
+        cout<<"the absolute value of "<<b<<" is "<<abs(b)<<endl;
+        break;
+        case 2:cout<<"the addition of "<<a<<" and "<<b<<" is "<<a+b<<endl;
+        break;
+        case 3:cout<<"the substraction of "<<a<<" and "<<b<<" is "<<a-b<<endl;
+        break;
+        case 4:cout<<"the multiplication of "<<a<<" and "<<b<<" is "<<a*b<<endl;
+        break;
+        case 5: cout<<"the division of "<<a<<" and "<<b<<" is "<<a/b<<endl;
+        break;
+        default:cout<<"invalid input"<<endl;
+        
+    }
+    return 0;
+}
